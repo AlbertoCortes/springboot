@@ -31,9 +31,7 @@ public class ProductRepositoryMockTest {
                 .status("Created")
                 .createAt(new Date()).build();
         productRepository.save(product01);
-
         List<Product> founds= productRepository.findByCategory(product01.getCategory());
-
         assertThat(founds.size()).isEqualTo(3);
     }
 }

@@ -36,5 +36,4 @@ public class ProductRepositoryMockTest {
 
         assertThat(founds.size()).isEqualTo(3);
     }
-
 }
